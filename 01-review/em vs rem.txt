@@ -1,0 +1,6 @@
+Em vs Rem:
+
+em is width of em character
+em is reltive to your text that you are working with: ex. padding: 1em;
+
+ 
