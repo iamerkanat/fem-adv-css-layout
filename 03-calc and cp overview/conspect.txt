@@ -1,0 +1,64 @@
+Calc() is CSS + Math
+
+Addition +
+Subtraction -
+Multiplication *
+Division /
+
+width: calc(100% - 80px); //Saas does not like it...
+
+96.56% SUPPORT 
+
+Advantages: 
+#1 weird and good Math
+#2 document Math
+#3 css-tricks.com
+
+Good gapping:
+#4 .area{width: 40%;}  .area2{width: calc(60% - 1em);}
+#5 
+
+QUIRKS:
+1. Always put SPACE!
+
+
+
+CUSTOM PROPERTIES:
+92.51% SUPPORT
+* JS cannot manipulate CSS CUSTOM PROPERTIES !!!
+
+
+/*root of DOM, global thing*/
+
+:root{ 
+    --primary-color: #4e36g8;
+    --gap: 1.75rem;
+}
+
+
+.wrapper{
+    background-color: var(--primary-color);
+}
+
+h1{
+    margin: calc(var(--gap) * 2px)
+}
+
+MANY THINGS TO DECLARE
+
+Saas:
+
+$primary-color: #fff;
+
+h1{
+    color: $primary-color;
+}
+
+SCOPING Saas:
+$color: red;
+h1{
+    $color: green;
+    color: $color; /*color will be green because of scope*/
+}
+
+
