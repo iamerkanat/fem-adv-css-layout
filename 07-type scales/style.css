@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Nobile:400,500|Open+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --base-size: 1em;
+    --type-scale: 1.125;
+    --h5: calc(var(--base-size) * var(--type-scale));
+    --h4: calc(var(--h5) * var(--type-scale));
+    --h3: calc(var(--h4) * var(--type-scale));
+    --h2: calc(var(--h3) * var(--type-scale));
+    --h1: calc(var(--h2) * var(--type-scale));
+    --s: calc(var(--base-size) / var(--type-scale));
+
+
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.45;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 2.75rem 0 1rem;
+    font-family: 'Nobile', sans-serif;
+    font-weight: 500;
+    line-height: 1.15;
+  }
+
+  
+  h1 {font-size: var(--h1);}
+
+  h2 {font-size: var(--h2);}
+  
+  h3 {font-size: var(--h3);}
+  
+  h4 {font-size: var(--h4);}
+  
+  h5 {font-size: var(--h5);}
+  
+  p {font-size: var(--base-size);}
+
+  small{ font-size: var(--s)}
