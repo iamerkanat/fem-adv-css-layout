@@ -1,0 +1,61 @@
+/* h/t: www.type-scale.com */
+
+
+p{
+  
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Nobile:400,500|Open+Sans&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #333;
+}
+
+p {margin-bottom: 1.25em;}
+
+h1, h2, h3, h4, h5 {
+  margin: 2.75rem 0 1rem;
+  font-family: 'Nobile', sans-serif;
+  font-weight: 500;
+  line-height: 1.15;
+}
+:root {
+  --base-size: 1em;
+  --type-scale: 1.125;
+  --h5: calc(var(--base-size) * var(--type-scale));
+  --h4: calc(var(--h5) * var(--type-scale));
+  --h3: calc(var(--h4) * var(--type-scale));
+  --h2: calc(var(--h3) * var(--type-scale));
+  --h1: calc(var(--h2) * var(--type-scale));
+}
+
+h1 {font-size: var(--h1);}
+
+h2 {font-size: var(--h2);}
+
+h3 {font-size: var(--h3);}
+
+h4 {font-size: var(--h4);}
+
+h5 {font-size: var(--h5);}
+
+p {font-size: var(--base-size);}
+
+small, .text_small {font-size: calc(var(--base-size) / var(--type-scale));}
+
+@media (min-width: 480px) {
+  :root {
+    --type-scale: 1.2;
+  }
+  --base-size: 1.2em;
+}
+@media (min-width: 768px) {
+  :root {
+    --type-scale: 1.25;
+  }
+  --base-size: 1em;
+}

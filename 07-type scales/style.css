@@ -45,3 +45,12 @@ h1, h2, h3, h4, h5 {
   p {font-size: var(--base-size);}
 
   small{ font-size: var(--s)}
+
+
+@media(min-width: 480px){
+    /* --base-size: 1.2em; */
+}
+
+@media(min-width: 768px){
+
+}

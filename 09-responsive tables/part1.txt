@@ -1,0 +1,84 @@
+Tables: 
+<thead>
+    <tr
+        td
+    </tr 
+</thead>
+
+<tbody>
+    <tr
+        td
+    </tr 
+</tbody>
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tablescroll{
+  overflow-x: auto;
+}
+table, thead, tbody, th, td, tr{
+  display: block;
+}
+thead tr{
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+table{
+  border: 1px solid black;
+}
+
+tr{
+  border-bottom: 1px solid black;
+}
+
+tr:nth-child(odd){
+  background-color: #eee;
+}
+
+th, td{
+  padding: 1rem;
+}
+
+td::before{
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+td:nth-of-type(1)::before{
+  content: "Description: "
+}
+
+td:nth-of-type(2)::before{
+  content: "Weight: "
+}
+
+td:nth-of-type(3)::before{
+  content: "Measure: "
+}
+td:nth-of-type(4)::before{
+  content: "Vitamin C: "
+}
+td:nth-of-type(5)::before{
+  content: "Vitamin K: "
+}
+
+
+td:nth-of-type(5)::after{
+  content: " ug/measure"
+}
+td:nth-of-type(4)::after{
+  content: " mg/measure"
+}
+
+td:nth-of-type(2)::after{
+  content: " g "
+}
+
+
+\B5g - is more miu(micro)
+
+&micro;
