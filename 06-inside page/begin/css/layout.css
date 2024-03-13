@@ -13,9 +13,10 @@ main {
   --columns: 16;
 }
 section,
+#inside article, #inside aside,
 #devs li {
     --width: 16;
-    --gap-constant: 0.3%;
+    --gap-constant: 0.25%;
 	--initialbasis: calc(var(--width, 0) / var(--columns, 16) * 100%);
     --gap: calc((var(--columns, 16) - var(--width, 0)) * var(--gap-constant, 0.3%));
 	flex-basis: calc(var(--initialbasis) - var(--gap));
@@ -64,6 +65,13 @@ section,
         float: right;
         margin: 0 0 1rem 1rem;
     }
+
+    #inside article{
+        --width: 7;
+    }
+    #inside aside{
+        --width: 4;
+    }
 }
 @media (min-width: 950px){
     /* keep our math working, move 3rd column to bottom */
@@ -81,6 +89,14 @@ section,
         --width: 3;
         order: 3;
     }
+
+    #inside article{
+        --width: 10;
+    }
+
+    #inside aside{
+        --width: 4;
+    }
 }
 @media (min-width: 1200px) {
     #devs ul {
@@ -97,5 +113,13 @@ section,
     #resources {
         --width: 3;
         order: 4;
+    }
+
+    #inside article{
+        --width: 12;
+    }
+
+    #inside aside{
+        --width: 4;
     }
 }
